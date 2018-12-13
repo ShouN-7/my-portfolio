@@ -1,31 +1,32 @@
 <template>
     <div>
-        <!--image class="circle" v-for="(asset, index) in assets" :src="asset" :key="index" /-->
-        <image src="require(../assets/java_icon.png)" />
+        <img class="circle" v-for="(asset, index) in assets" :src="asset" :key="index" />
+        <h4>skills</h4>
+        <img src="../assets/java_icon.png" />
     </div>
 </template>
 <script>
 export default {
   created: function () {
-    /* for (let i = 0; i < this.skills.length; i++) {
+    for (let i = 0; i < this.skills.length; i++) {
       let uri = '../assets/' + this.skills[i] + '_icon.png'
-      let asset = require(uri)
+      let asset = uri
       this.assets[i] = asset
-    } */
+    }
   },
   data: function () {
     return {
       skills: ['java', 'php', 'android', 'cs', 'html_css', 'js', 'docker', 'gas'],
       assets: []
     }
-  },
-  method: {
-    getAssets (skill) {
-      let uri = require('../assets/' + skill + '_icon.png')
-      // Vue.set(this.assets, 0, 'ind')
-      return uri
-    }
   }
+  // method: {
+  //   getAssets (skill) {
+  //     let uri = require('../assets/' + skill + '_icon.png')
+  //     // Vue.set(this.assets, 0, 'ind')
+  //     return uri
+  //   }
+  // }
 }
 
 </script>
