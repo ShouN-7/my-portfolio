@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img class="circle" v-for="(val, index) in skills" :src="imagePath(val)" :key="index" />
+        <img class="rounded-circle img-fluid img-thumbnail col-sm-3" v-for="(val, index) in skills" :src="imagePath(val)" :key="index" />
     </div>
 </template>
 <script>

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img class="circle" src="./assets/logo.png">
-    <router-view></router-view>
+    <div class="container">
+      <img class="rounded-circle img-fluid col-sm-3" src="./assets/logo.png">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -19,15 +21,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #2c8fba;
 }
-.circle {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: skyblue;
-    text-align:center;
-    line-height: 200px;
-    vertival-align: middle;
+html {
+  background-color: #2c8fba;
 }
 </style>

@@ -6,8 +6,12 @@ import App from './App'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+// import bModal from 'bootstrap-vue/es/components/modal/modal'
+// import bModalDirective from 'bootstrap-vue/es/directives/modal/modal'
 
 Vue.use(BootstrapVue)
+// Vue.component('b-modal', bModal)
+// Vue.directive('b-modal', bModalDirective)
 
 Vue.config.productionTip = false
 window.Vue = Vue
