@@ -5,7 +5,7 @@
         <p class="h2">{{ message }}</p>
       </div>
       <img class="rounded-circle img-fluid col-sm-3" src="./assets/logo.png">
-      <router-view></router-view>
+      <router-view @hover="balloonHandle(message)"></router-view>
     </div>
   </div>
 </template>
@@ -16,6 +16,11 @@ export default {
   data () {
     return {
       message: 'Hello, Im ShouN'
+    }
+  },
+  methods: {
+    balloonHandle: function (message) {
+      this.message = message
     }
   }
 }
