@@ -6,6 +6,20 @@
     <title>app</title>
   </head>
   <body>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCJmL9KmFYvAwUi-ajNmIBJtUJkbB7Pjo4",
+        authDomain: "shouns-portfolio.firebaseapp.com",
+        databaseURL: "https://shouns-portfolio.firebaseio.com",
+        projectId: "shouns-portfolio",
+        storageBucket: "shouns-portfolio.appspot.com",
+        messagingSenderId: "396872528893"
+      };
+      firebase.initializeApp(config);
+    </script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
