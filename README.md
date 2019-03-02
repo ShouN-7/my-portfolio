@@ -1,6 +1,19 @@
-# app
+# ShouNs-portfolio
 
-> A Vue.js project
+> A Vue.js project on docker
+
+## Start Develop
+
+``` bash
+# start docker
+docker-compose up -d --build
+
+# install firebase tools
+doker-compose exec vue_app npm install -g firebase-tools
+
+# serve with hot reload at localhost:8080
+docker-compose exec vue_app npn run dev
+```
 
 ## Build Setup
 
